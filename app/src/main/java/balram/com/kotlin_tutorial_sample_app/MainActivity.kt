@@ -24,7 +24,9 @@ class MainActivity : AppCompatActivity() {
         // Kotlin Control Flow
         var result = if (a>b) a else b;
         Log.e("Result",""+result);
-// Kotlin When Expression
+
+
+        // Kotlin When Expression
         /*when replaces the switch operator of C-like languages*/
         when (c) {
             1 ->  Log.e("X==","1");
@@ -35,8 +37,28 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        // Kotlin Returns and Jumps
+
+      /*Break and Continue Labels*/
+        loop@ for (i in 1..100) {
+           Log.e("Loop",""+i);
+        }
+
+
+        loop@ for (i in 1..100) {
+            for (j in 1..100) {
+                Log.e("Loop in J",""+j);
+                if (j==50) break@loop
+            }
+        }
+
+
+        }
+
+
+
 
     }
 
 
-}
+
