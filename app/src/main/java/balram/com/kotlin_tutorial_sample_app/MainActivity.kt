@@ -15,14 +15,25 @@ class MainActivity : AppCompatActivity() {
 
     var a:Int = 20;
     var b:Int = 10
+    var c:Int = 1;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        // Kotlin Control Flow
 
+        // Kotlin Control Flow
         var result = if (a>b) a else b;
         Log.e("Result",""+result);
+// Kotlin When Expression
+        /*when replaces the switch operator of C-like languages*/
+        when (c) {
+            1 ->  Log.e("X==","1");
+            2 -> Log.e("X==","2");
+            else -> { // Note the block
+
+                print("x is neither 1 nor 2")
+            }
+        }
 
 
     }
