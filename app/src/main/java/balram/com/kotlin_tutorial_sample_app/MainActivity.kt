@@ -13,24 +13,28 @@ class MainActivity : AppCompatActivity() {
 
     // Kotlin Variable declaration
 
-    var a:Int = 20;
-    var b:Int = 10
-    var c:Int = 1;
+    var a: Int = 20;
+    var b: Int = 10
+    var c: Int = 1;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         // Kotlin Control Flow
-        var result = if (a>b) a else b;
-        Log.e("Result",""+result);
+
+        var result = if (a > b) a else b;
+        Log.e("Result", "" + result);
 
 
         // Kotlin When Expression
-        /*when replaces the switch operator of C-like languages*/
+
+        /*when replaces the switch operator
+        of C-like languages*/
+
         when (c) {
-            1 ->  Log.e("X==","1");
-            2 -> Log.e("X==","2");
+            1 -> Log.e("X==", "1");
+            2 -> Log.e("X==", "2");
             else -> { // Note the block
 
                 print("x is neither 1 nor 2")
@@ -39,34 +43,32 @@ class MainActivity : AppCompatActivity() {
 
         // Kotlin Returns and Jumps
 
-      /*Break and Continue Labels*/
+        /*Break and Continue Labels*/
         loop@ for (i in 1..100) {
-           Log.e("Loop",""+i);
+            Log.e("Loop", "" + i);
         }
 
-
-        loop@ for (i in 1..100) {
-            for (j in 1..100) {
-                Log.e("Loop in J",""+j);
-                if (j==50) break@loop
-            }
-        }
-
-// Return at Labels
 
         loop@ for (i in 1..100) {
             for (j in 1..100) {
-                Log.e("Loop in J",""+j);
-                if (j==10) return
+                Log.e("Loop in J", "" + j);
+                if (j == 50) break@loop
             }
         }
 
+        // Return at Labels
+
+        loop@ for (i in 1..100) {
+            for (j in 1..100) {
+                Log.e("Loop in J", "" + j);
+                if (j == 10) return
+            }
         }
-
-
-
 
     }
+
+
+}
 
 
 
