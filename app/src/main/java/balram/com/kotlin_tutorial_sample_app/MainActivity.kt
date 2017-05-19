@@ -52,6 +52,14 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+// Return at Labels
+
+        loop@ for (i in 1..100) {
+            for (j in 1..100) {
+                Log.e("Loop in J",""+j);
+                if (j==10) return
+            }
+        }
 
         }
 
