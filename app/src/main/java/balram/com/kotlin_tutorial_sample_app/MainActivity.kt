@@ -87,6 +87,16 @@ class MainActivity : AppCompatActivity() {
         // Mutable list
 
 
+        val items = listOf(1, 2, 3, 4)
+        items.first() == 1
+        items.last() == 4
+        items.filter { it % 2 == 0 }   // returns [2, 4]
+
+        val rwList = mutableListOf(1, 2, 3)
+        rwList.requireNoNulls()        // returns [1, 2, 3]
+        if (rwList.none { it > 6 }) println("No items above 6")  // prints "No items above 6"
+        val item = rwList.firstOrNull()
+
 
 
 
