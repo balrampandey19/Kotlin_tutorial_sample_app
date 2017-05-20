@@ -21,6 +21,25 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+        val numbers: MutableList<Int> = mutableListOf(1, 2, 3) //Mutable list
+
+        Log.e("MutableList",""+numbers);
+
+        // Imutable list
+
+        val readOnlyView: List<Int> = numbers
+
+        Log.e("readOnlyView",""+readOnlyView);
+
+        // Hash set
+
+        val strings = hashSetOf("a", "b", "c", "c")
+
+        Log.e("Hash Set",""+strings);
+
+
+
         // Kotlin Control Flow
 
         var result = if (a > b) a else b;
@@ -68,21 +87,6 @@ class MainActivity : AppCompatActivity() {
 
         // Mutable list
 
-        val numbers: MutableList<Int> = mutableListOf(1, 2, 3) //Mutable list
-
-        Log.e("MutableList",""+numbers);
-
-        // Imutable list
-
-        val readOnlyView: List<Int> = numbers
-
-        Log.e("readOnlyView",""+readOnlyView);
-
-        // Hash set
-
-        val strings = hashSetOf("a", "b", "c", "c")
-
-        Log.e("Hash Set",""+readOnlyView);
 
 
 
