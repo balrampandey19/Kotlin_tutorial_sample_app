@@ -66,9 +66,24 @@ class MainActivity : AppCompatActivity() {
         }
         // Kotlin Collection Mutable List
 
+        // Mutable list
+
         val numbers: MutableList<Int> = mutableListOf(1, 2, 3) //Mutable list
 
-        Log.e("Numbers",""+numbers);
+        Log.e("MutableList",""+numbers);
+
+        // Imutable list
+
+        val readOnlyView: List<Int> = numbers
+
+        Log.e("readOnlyView",""+readOnlyView);
+
+
+
+
+
+
+
 
 
 
