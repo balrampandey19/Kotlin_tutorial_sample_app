@@ -64,6 +64,13 @@ class MainActivity : AppCompatActivity() {
                 if (j == 10) return
             }
         }
+        // Kotlin Collection Mutable List
+
+        val numbers: MutableList<Int> = mutableListOf(1, 2, 3) //Mutable list
+
+        Log.e("Numbers",""+numbers);
+
+
 
     }
 
