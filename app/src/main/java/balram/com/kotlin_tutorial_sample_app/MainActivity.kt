@@ -78,6 +78,14 @@ class MainActivity : AppCompatActivity() {
 
         Log.e("readOnlyView",""+readOnlyView);
 
+        // Hash set
+
+        val strings = hashSetOf("a", "b", "c", "c")
+
+        Log.e("Hash Set",""+readOnlyView);
+
+
+
 
 
 
