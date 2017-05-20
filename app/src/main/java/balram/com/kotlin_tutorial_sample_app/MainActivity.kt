@@ -67,7 +67,6 @@ class MainActivity : AppCompatActivity() {
             Log.e("Loop", "" + i);
         }
 
-
         loop@ for (i in 1..100) {
             for (j in 1..100) {
                 Log.e("Loop in J", "" + j);
